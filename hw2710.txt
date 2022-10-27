@@ -1,0 +1,8 @@
+#!/bin/bash
+D=$(date +"%d%m%y")
+for run in {1..10}
+do
+touch /opt/37_38_MA/Skiba/1/"$run""$D"
+done
+
+# */15 * * * * /opt/37_38_MA/Skiba/taskSkiba.sh
